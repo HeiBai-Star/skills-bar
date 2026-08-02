@@ -1,0 +1,4 @@
+interface:
+  display_name: "决策模型构建器"
+  short_description: "把复杂问题转化为可复核、可比较、可行动的分析与决策模型"
+  default_prompt: "使用 $decision-model-builder 把这个复杂选择转化为透明、可检验的决策模型，并给出条件化建议。"
