@@ -8,11 +8,14 @@
 
 | Skill | 简介 | 版本 | 安装入口 |
 |---|---|---|---|
+| [buddhist-study-system](skills/buddhist-study-system/SKILL.md) | 中文佛学学习、经论精读、哲学思辨与苏格拉底训练 | 1.0.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/buddhist-study-system) · [CC Switch](docs/cc-switch-links.md#buddhist-study-system) |
 | [decision-model-builder](skills/decision-model-builder/SKILL.md) | 把复杂选择转化为透明、可复核、可更新的决策模型 | 1.0.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/decision-model-builder) · [CC Switch](docs/cc-switch-links.md#decision-model-builder) |
 
 <!-- skills-catalog:end -->
 
 手机或其他支持 GitHub URL 的客户端，请使用表中的 **GitHub / 手机** 子目录链接。请安装完整 Skill 目录；只下载 SKILL.md 的导入器可能缺少 references 和 scripts，届时需要补齐资源。
+
+佛学学习示例、提问训练和换对话续学方法见 [buddhist-study-system 使用指南](skills/buddhist-study-system/USAGE.md)。
 
 ## 使用 CC Switch
 
@@ -81,11 +84,9 @@ agents/openai.yaml 是可选的 Codex UI 元数据，通用指令仍在 SKILL.md
 
 ~~~text
 skills-bar/
-├── skills/decision-model-builder/   # 唯一的正式 Skill 源
-│   ├── SKILL.md
-│   ├── agents/openai.yaml
-│   ├── references/
-│   └── scripts/
+├── skills/                         # 正式 Skill 源，每个目录可独立安装
+│   ├── decision-model-builder/     # 决策模型与评分工具
+│   └── buddhist-study-system/      # 佛学学习、参考资料与记录模板
 ├── templates/skill-template/        # .tmpl 文件，避免被误发现
 ├── scripts/                        # 新建、校验、索引、打包、安装
 ├── tests/                          # 格式与打包行为测试

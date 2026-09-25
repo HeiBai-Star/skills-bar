@@ -6,6 +6,20 @@
   "skills_root": "skills",
   "skills": [
     {
+      "name": "buddhist-study-system",
+      "path": "skills/buddhist-study-system",
+      "description": "担任中文佛学研究与学习导师，支持长期学习路线、经论精读、分宗派概念辨析、哲学论证、苏格拉底训练和知识体系构建。适用于佛学概念与问题、经文或整本经论、宗派比较、用户理解检验、阅读计划及复习续学；普通人生建议或无佛学研究目标的文案不触发。",
+      "summary": "中文佛学学习、经论精读、哲学思辨与苏格拉底训练",
+      "category": "learning",
+      "version": "1.0.0",
+      "license": "MIT",
+      "format": "agent-skills",
+      "optional_runtime": null,
+      "content_sha256": "b2fd4568f93d62e8db981ca87a134f6e1b7012e7bccb46953c67f5f52d2e1baa",
+      "url": "https://github.com/HeiBai-Star/skills-bar/tree/main/skills/buddhist-study-system",
+      "ccswitch_url": "ccswitch://v1/import?resource=skill&name=buddhist-study-system&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fbuddhist-study-system&branch=main"
+    },
+    {
       "name": "decision-model-builder",
       "path": "skills/decision-model-builder",
       "description": "将模糊、复杂或高不确定性的问题转化为透明、可计算、可质疑、可更新的分析与决策模型。用于商业、产品、运营、投资、采购、职业或项目决策，包括界定问题、拆解因果、比较方案、确定优先级、资源配置、评估风险、情景与敏感性分析、设计实验，以及产出决策备忘录；当用户提到“分析框架”“决策模型”“方案比较”“优先级”“值不值得”“怎么选”“风险收益”“敏感性”“如果……会怎样”时使用。",

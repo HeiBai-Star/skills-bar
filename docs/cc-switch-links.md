@@ -4,6 +4,12 @@
 GitHub 的 Markdown 页面可能不允许直接点击 ccswitch:// 链接，因此保留可复制的完整文本。
 配置与版本差异见 [接入说明](cc-switch.md)。
 
+## buddhist-study-system
+
+~~~text
+ccswitch://v1/import?resource=skill&name=buddhist-study-system&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fbuddhist-study-system&branch=main
+~~~
+
 ## decision-model-builder
 
 ~~~text
