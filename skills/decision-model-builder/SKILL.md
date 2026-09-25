@@ -85,10 +85,10 @@ description: 将模糊、复杂或高不确定性的问题转化为透明、可�
 4. 给出方案间差异，而不只给总分。
 5. 找出选择发生反转的临界值。
 
-当所有标准已经定义为“0–100 且越高越好”的区间评分时，可运行：
+当所有标准已经定义为“0–100 且越高越好”的区间评分时，可运行可用的 Python 3 解释器（如 `python`、`python3` 或 `py -3`）调用脚本。根据宿主提供的 Skill 路径定位脚本，不要假定当前工作目录就是 Skill 目录：
 
-```powershell
-python scripts/score_options.py --input decision.json --format markdown
+```text
+python "<skill-root>/scripts/score_options.py" --input decision.json --format markdown
 ```
 
 输入格式和解释见脚本的 `--help`。不得用脚本替代评分定义、证据判断或硬约束检查。

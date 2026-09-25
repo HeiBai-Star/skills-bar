@@ -1,0 +1,30 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate portable Skill format
+        run: python scripts/validate_skills.py
+      - name: Check scoring helper
+        run: python skills/decision-model-builder/scripts/score_options.py --help
+      - name: Check POSIX installer syntax
+        if: runner.os != 'Windows'
+        run: bash -n scripts/install.sh
+      - name: Check PowerShell installer syntax
+        shell: pwsh
+        run: '[void][scriptblock]::Create((Get-Content -Raw scripts/install.ps1))'
