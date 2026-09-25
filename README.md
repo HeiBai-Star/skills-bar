@@ -9,6 +9,7 @@
 | Skill | 简介 | 版本 | 安装入口 |
 |---|---|---|---|
 | [buddhist-study-system](skills/buddhist-study-system/SKILL.md) | 中文佛学学习、经论精读、哲学思辨与苏格拉底训练 | 1.0.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/buddhist-study-system) · [CC Switch](docs/cc-switch-links.md#buddhist-study-system) |
+| [cognitive-learning-coach](skills/cognitive-learning-coach/SKILL.md) | 按学习难点选择方法，连接理解、论证、练习、复习与迁移 | 1.1.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/cognitive-learning-coach) · [CC Switch](docs/cc-switch-links.md#cognitive-learning-coach) |
 | [decision-model-builder](skills/decision-model-builder/SKILL.md) | 把复杂选择转化为透明、可复核、可更新的决策模型 | 1.0.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/decision-model-builder) · [CC Switch](docs/cc-switch-links.md#decision-model-builder) |
 
 <!-- skills-catalog:end -->
@@ -16,6 +17,7 @@
 手机或其他支持 GitHub URL 的客户端，请使用表中的 **GitHub / 手机** 子目录链接。请安装完整 Skill 目录；只下载 SKILL.md 的导入器可能缺少 references 和 scripts，届时需要补齐资源。
 
 佛学学习示例、提问训练和换对话续学方法见 [buddhist-study-system 使用指南](skills/buddhist-study-system/USAGE.md)。
+通用学习路线、概念地图、论证与复习方法见 [cognitive-learning-coach 使用指南](skills/cognitive-learning-coach/GUIDE.zh-CN.md)。
 
 ## 使用 CC Switch
 
@@ -86,7 +88,8 @@ agents/openai.yaml 是可选的 Codex UI 元数据，通用指令仍在 SKILL.md
 skills-bar/
 ├── skills/                         # 正式 Skill 源，每个目录可独立安装
 │   ├── decision-model-builder/     # 决策模型与评分工具
-│   └── buddhist-study-system/      # 佛学学习、参考资料与记录模板
+│   ├── buddhist-study-system/      # 佛学学习、参考资料与记录模板
+│   └── cognitive-learning-coach/   # 认知科学学习方法、练习与进度管理
 ├── templates/skill-template/        # .tmpl 文件，避免被误发现
 ├── scripts/                        # 新建、校验、索引、打包、安装
 ├── tests/                          # 格式与打包行为测试

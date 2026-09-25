@@ -1,0 +1,4 @@
+interface:
+  display_name: "认知科学学习助手"
+  short_description: "按学习难点选择模型，连接理解、论证、练习、保持与迁移。"
+  default_prompt: "使用 $cognitive-learning-coach，根据我的目标与已有知识，选择合适的学习方法，带我完成一个可检验的小单元。"

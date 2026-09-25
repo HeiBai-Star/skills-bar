@@ -20,6 +20,20 @@
       "ccswitch_url": "ccswitch://v1/import?resource=skill&name=buddhist-study-system&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fbuddhist-study-system&branch=main"
     },
     {
+      "name": "cognitive-learning-coach",
+      "path": "skills/cognitive-learning-coach",
+      "description": "Guide study of concepts, books and practical skills; build learning routes and concept maps; practise recall, reasoning and transfer; resume study records. Use for 系统学习、带读、解释概念、图尔敏分析、考我、复习、学习复盘. Respect requests for direct answers; do not turn unrelated work into lessons.",
+      "summary": "按学习难点选择方法，连接理解、论证、练习、复习与迁移",
+      "category": "learning",
+      "version": "1.1.0",
+      "license": "MIT",
+      "format": "agent-skills",
+      "optional_runtime": null,
+      "content_sha256": "796a49ac3020e343f314f5efac228ada79130a6b5477a7d4fcd11f8ab6a09981",
+      "url": "https://github.com/HeiBai-Star/skills-bar/tree/main/skills/cognitive-learning-coach",
+      "ccswitch_url": "ccswitch://v1/import?resource=skill&name=cognitive-learning-coach&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fcognitive-learning-coach&branch=main"
+    },
+    {
       "name": "decision-model-builder",
       "path": "skills/decision-model-builder",
       "description": "将模糊、复杂或高不确定性的问题转化为透明、可计算、可质疑、可更新的分析与决策模型。用于商业、产品、运营、投资、采购、职业或项目决策，包括界定问题、拆解因果、比较方案、确定优先级、资源配置、评估风险、情景与敏感性分析、设计实验，以及产出决策备忘录；当用户提到“分析框架”“决策模型”“方案比较”“优先级”“值不值得”“怎么选”“风险收益”“敏感性”“如果……会怎样”时使用。",

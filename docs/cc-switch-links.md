@@ -10,6 +10,12 @@ GitHub 的 Markdown 页面可能不允许直接点击 ccswitch:// 链接，因�
 ccswitch://v1/import?resource=skill&name=buddhist-study-system&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fbuddhist-study-system&branch=main
 ~~~
 
+## cognitive-learning-coach
+
+~~~text
+ccswitch://v1/import?resource=skill&name=cognitive-learning-coach&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fcognitive-learning-coach&branch=main
+~~~
+
 ## decision-model-builder
 
 ~~~text

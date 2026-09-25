@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0.0",
+  "template_notes": [
+    "这是空白记录模板，不是数据库或真实用户档案。",
+    "实例化时移除 template_notes 和所有以 _template 结尾的字段。",
+    "真实记录仅来自用户自述、真实作答或实际读取的材料；观察、推断与未知须区分。",
+    "未知值保留 null；空数组不填入示例。日期使用带时区的 ISO 8601 或明确的本地日期，不猜测。",
+    "能力状态按维度记录；状态码、字段及旧版转换遵循 references/planning-state-tools.md 的唯一词表。",
+    "即时完成、延迟保持和迁移证据分别保存；范围对象只填写有依据的 details 和 evidence_ids，未知用 null。",
+    "review_queue 只保存未完成且未取消的事项；完成后结果写入 observations 并关联 review_id，关闭信息写入 closed_reviews，再移出队列。",
+    "重复导入不重复添加相同 ID 的相同记录；修改本地队列不表示外部提醒已同步。"
+  ],
+  "updated_at": null,
+  "profile": {
+    "language": null,
+    "timezone": null,
+    "user_stated_goals": [],
+    "user_stated_background": [],
+    "user_stated_constraints": [],
+    "interaction_preference": null
+  },
+  "topics": [],
+  "sessions": [],
+  "observations": [],
+  "competencies": [],
+  "review_queue": [],
+  "closed_reviews": [],
+  "sources": [],
+  "topic_template": {
+    "topic_id": null,
+    "title": null,
+    "target_task": null,
+    "success_criteria": [],
+    "prerequisite_topic_ids": [],
+    "source_ids": []
+  },
+  "session_template": {
+    "session_id": null,
+    "topic_ids": [],
+    "started_at": null,
+    "goal": null,
+    "strategy_ids": [],
+    "observation_ids": [],
+    "next_step": null
+  },
+  "observation_template": {
+    "observation_id": null,
+    "session_id": null,
+    "topic_id": null,
+    "task_id": null,
+    "review_id": null,
+    "observed_at": null,
+    "task_prompt": null,
+    "actual_user_response": null,
+    "evidence_kind": null,
+    "support_level": null,
+    "answer_previously_exposed": null,
+    "feedback": null,
+    "interpretation": null,
+    "unknowns": [],
+    "source_ids": []
+  },
+  "competency_template": {
+    "topic_id": null,
+    "dimension": null,
+    "status": null,
+    "evidence_ids": [],
+    "last_checked_at": null,
+    "retention_tested": null,
+    "retention_scope": null,
+    "transfer_tested": null,
+    "transfer_scope": null,
+    "limits": []
+  },
+  "review_item_template": {
+    "review_id": null,
+    "topic_id": null,
+    "target_dimension": null,
+    "suggested_on_or_after": null,
+    "suggested_on_or_before": null,
+    "rationale": null,
+    "schedule_is_heuristic": true,
+    "reminder_created": false,
+    "reminder_reference": null,
+    "actual_tool_confirmation": null
+  },
+  "closed_review_template": {
+    "review_id": null,
+    "topic_id": null,
+    "target_dimension": null,
+    "suggested_on_or_after": null,
+    "suggested_on_or_before": null,
+    "rationale": null,
+    "schedule_is_heuristic": true,
+    "reminder_created": false,
+    "actual_tool_confirmation": null,
+    "resolution": null,
+    "closed_at": null,
+    "observation_ids": [],
+    "reminder_reference": null,
+    "pending_reminder_action": null
+  },
+  "source_template": {
+    "source_id": null,
+    "title": null,
+    "author": null,
+    "publication_date": null,
+    "locator": null,
+    "accessed_at": null,
+    "actually_read_scope": null,
+    "source_kind": null
+  }
+}
