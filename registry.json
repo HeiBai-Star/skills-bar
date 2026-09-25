@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "name": "Skills Bar",
+  "repository": "HeiBai-Star/skills-bar",
+  "branch": "main",
+  "skills_root": "skills",
+  "skills": [
+    {
+      "name": "decision-model-builder",
+      "path": "skills/decision-model-builder",
+      "description": "将模糊、复杂或高不确定性的问题转化为透明、可计算、可质疑、可更新的分析与决策模型。用于商业、产品、运营、投资、采购、职业或项目决策，包括界定问题、拆解因果、比较方案、确定优先级、资源配置、评估风险、情景与敏感性分析、设计实验，以及产出决策备忘录；当用户提到“分析框架”“决策模型”“方案比较”“优先级”“值不值得”“怎么选”“风险收益”“敏感性”“如果……会怎样”时使用。",
+      "summary": "把复杂选择转化为透明、可复核、可更新的决策模型",
+      "category": "decision-making",
+      "version": "1.0.0",
+      "license": "MIT",
+      "format": "agent-skills",
+      "optional_runtime": "Python >= 3.9（仅评分脚本需要）",
+      "content_sha256": "13e7d6210c1cd5b816196652df0f00ccc8b4c0f97059f817f35805f3d4b73647",
+      "url": "https://github.com/HeiBai-Star/skills-bar/tree/main/skills/decision-model-builder",
+      "ccswitch_url": "ccswitch://v1/import?resource=skill&name=decision-model-builder&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fdecision-model-builder&branch=main"
+    }
+  ]
+}

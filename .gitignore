@@ -4,3 +4,10 @@ __pycache__/
 Thumbs.db
 .idea/
 .vscode/
+.venv/
+.pytest_cache/
+.tmp-*/
+dist/
+.env
+.env.*
+!.env.example

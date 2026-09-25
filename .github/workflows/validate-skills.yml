@@ -7,6 +7,9 @@ on:
 permissions:
   contents: read
 
+env:
+  PYTHONUTF8: "1"
+
 jobs:
   validate:
     strategy:
@@ -18,8 +21,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install authoring dependencies
+        run: python -m pip install -r requirements-dev.txt
       - name: Validate portable Skill format
         run: python scripts/validate_skills.py
+      - name: Check generated registry and catalogs
+        run: python scripts/build_skills.py --check
+      - name: Test authoring and packaging behavior
+        run: python -m unittest discover -s tests -v
       - name: Check scoring helper
         run: python skills/decision-model-builder/scripts/score_options.py --help
       - name: Check POSIX installer syntax
@@ -28,3 +37,12 @@ jobs:
       - name: Check PowerShell installer syntax
         shell: pwsh
         run: '[void][scriptblock]::Create((Get-Content -Raw scripts/install.ps1))'
+      - name: Build Skill archives
+        run: python scripts/build_skills.py --package
+      - name: Upload Skill archives
+        uses: actions/upload-artifact@v4
+        with:
+          name: skills-${{ runner.os }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
