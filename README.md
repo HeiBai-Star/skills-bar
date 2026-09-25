@@ -11,7 +11,7 @@
 ## 仓库结构
 
 ```text
-codex-skills/
+skills-bar/
 ├── README.md
 └── skills/
     ├── decision-model-builder/
@@ -28,7 +28,7 @@ codex-skills/
 向 Codex 提供仓库和 Skill 路径：
 
 ```text
-仓库：HeiBai-Star/codex-skills
+仓库：HeiBai-Star/skills-bar
 路径：skills/decision-model-builder
 ```
 
