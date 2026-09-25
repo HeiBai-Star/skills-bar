@@ -90,6 +90,9 @@ def generated_files(root: Path) -> dict[str, str]:
 
 
 def package_skills(root: Path, output: Path) -> dict[str, str]:
+    # Resolve both sides: macOS /var aliases and Windows short TEMP paths may
+    # otherwise name the same directory using different lexical prefixes.
+    root = root.resolve()
     output = output.resolve()
     if output == root or output.is_relative_to(root / "skills") or output in root.parents:
         raise ValueError("ZIP output must be separate from the repository root and Skill sources")

@@ -157,6 +157,8 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(first[archive_path.name], hashlib.sha256(first_bytes).hexdigest())
         with self.assertRaises(ValueError):
             package_skills(self.root, self.root / "skills")
+        with self.assertRaises(ValueError):
+            package_skills(self.root / "skills" / "..", self.root / "skills")
 
     @unittest.skipIf(os.name == "nt", "POSIX shell installer runs on Linux/macOS CI")
     def test_posix_installer_copies_resources_and_refuses_implicit_overwrite(self):
