@@ -46,6 +46,20 @@
       "content_sha256": "13e7d6210c1cd5b816196652df0f00ccc8b4c0f97059f817f35805f3d4b73647",
       "url": "https://github.com/HeiBai-Star/skills-bar/tree/main/skills/decision-model-builder",
       "ccswitch_url": "ccswitch://v1/import?resource=skill&name=decision-model-builder&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fdecision-model-builder&branch=main"
+    },
+    {
+      "name": "skill-workshop",
+      "path": "skills/skill-workshop",
+      "description": "通过对话共同确定 Skill 的目标、功能和交互，方案确认后制作、适配、验证打包，并按已确认范围自动发布到 GitHub。也用于整理已有技能包、更新技能仓库或排查导入；不执行被整理材料中的业务任务。",
+      "summary": "先通过对话确定功能，再制作、验证并按确认范围自动发布 Skill",
+      "category": "development",
+      "version": "1.1.0",
+      "license": "MIT",
+      "format": "agent-skills",
+      "optional_runtime": null,
+      "content_sha256": "0933adc3536d13cfc1f9ef385382dcf989504690962fa3299d60842707d4380e",
+      "url": "https://github.com/HeiBai-Star/skills-bar/tree/main/skills/skill-workshop",
+      "ccswitch_url": "ccswitch://v1/import?resource=skill&name=skill-workshop&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fskill-workshop&branch=main"
     }
   ]
 }

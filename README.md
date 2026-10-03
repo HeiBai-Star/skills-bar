@@ -11,6 +11,7 @@
 | [buddhist-study-system](skills/buddhist-study-system/SKILL.md) | 中文佛学学习、经论精读、哲学思辨与苏格拉底训练 | 1.0.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/buddhist-study-system) · [CC Switch](docs/cc-switch-links.md#buddhist-study-system) |
 | [cognitive-learning-coach](skills/cognitive-learning-coach/SKILL.md) | 按学习难点选择方法，连接理解、论证、练习、复习与迁移 | 1.1.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/cognitive-learning-coach) · [CC Switch](docs/cc-switch-links.md#cognitive-learning-coach) |
 | [decision-model-builder](skills/decision-model-builder/SKILL.md) | 把复杂选择转化为透明、可复核、可更新的决策模型 | 1.0.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/decision-model-builder) · [CC Switch](docs/cc-switch-links.md#decision-model-builder) |
+| [skill-workshop](skills/skill-workshop/SKILL.md) | 先通过对话确定功能，再制作、验证并按确认范围自动发布 Skill | 1.1.0 | [GitHub / 手机](https://github.com/HeiBai-Star/skills-bar/tree/main/skills/skill-workshop) · [CC Switch](docs/cc-switch-links.md#skill-workshop) |
 
 <!-- skills-catalog:end -->
 

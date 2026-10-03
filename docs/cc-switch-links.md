@@ -21,3 +21,9 @@ ccswitch://v1/import?resource=skill&name=cognitive-learning-coach&repo=HeiBai-St
 ~~~text
 ccswitch://v1/import?resource=skill&name=decision-model-builder&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fdecision-model-builder&branch=main
 ~~~
+
+## skill-workshop
+
+~~~text
+ccswitch://v1/import?resource=skill&name=skill-workshop&repo=HeiBai-Star%2Fskills-bar&directory=skills%2Fskill-workshop&branch=main
+~~~
